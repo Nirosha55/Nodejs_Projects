@@ -1,7 +1,19 @@
-const C = require("./test-module");
+//wrapping
+// console.log(arguments);
+// console.log(require("module").wrapper);
 
-// const cal = new C();
-// console.log(cal.mod(20,10));
-//  or
-const {add,multiply,diviion,mod} =require('./test-module');
-console.log(add(20,10));
+
+
+//module -export
+// const C = require("./test-module");
+// const calc1 = new C();
+// console.log(calc1.add(2, 5));
+
+//exports
+// const {add,multiply} =require('./mod');
+// console.log(add(20,10));
+
+require('./mod-1')();
+require('./mod-1')();
+require('./mod-1')();
+require('./mod-1')();
